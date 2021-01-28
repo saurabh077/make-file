@@ -1,6 +1,6 @@
 #this will execute the program 
-OBJ = obj
-all : 
+OBJ=obj
+all: 
 	mkdir -p $(OBJ) 
 	gcc Hello\ World.c -o $(OBJ)/hello-world
 clean: 
