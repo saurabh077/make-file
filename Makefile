@@ -1,4 +1,5 @@
 OBJ=obj
+
 all:
 	mkdir -p $(OBJ)
 	gcc hello-world.c -o $(OBJ)/hello-world
