@@ -1,10 +1,13 @@
 OBJ=obj
-all:
-	mkdir -p $(OBJ)
+
+all: 
+	mkdir -p $(OBJ) 
 	gcc hello-world.c -o $(OBJ)/hello-world
-
-clean:
+	
+clean: 
 	rm -f $(OBJ)/hello-world
-
+	
 clobber: 
 	rm -rf $(OBJ)
+
+
