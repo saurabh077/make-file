@@ -1,3 +1,10 @@
-#this will execute the program 
-all : 
-	gcc Hello\ World.c 
+OBJ=obj
+all:
+	mkdir -p $(OBJ)
+	gcc hello-world.c -o $(OBJ)/hello-world
+
+clean:
+	rm -f $(OBJ)/hello-world
+
+clobber: 
+	rm -rf $(OBJ)
