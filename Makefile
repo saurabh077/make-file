@@ -1,10 +1,10 @@
 #this will execute the program 
 OBJ = obj
 all : 
-	mkdir -p obj 
+	mkdir -p $(OBJ) 
 	gcc Hello\ World.c -o obj/hello-world
 clean: 
-	rm -f obj/*
+	rm -f $(OBJ)/*
 clobber: 
-	rm -rf obj
+	rm -rf $(OBJ)
 
